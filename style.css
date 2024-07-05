@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root{
+    --black:#2c9286;
+}
+
+*{
+  font-family: "Nunito", sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none; border:none;
+  text-decoration: none;
+  transition: a11 .2s linear;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('vid1.mp4'); /* Ganti 'landscape.jpg' dengan URL atau path file gambar lanskap */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    background: #000;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+header .logo span{
+    color: orange;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex: 2;
+}
+
+.navbar a {
+    color: #dad2d2;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: orange;
+}
+
+main {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.content-section {
+    display: none;
+    background-color: rgb(241, 167, 97);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-section.active {
+    display: block;
+}
+
+
+video {
+    width: 100%; /* Memastikan video mengisi lebar kontainer */
+    height: auto; /* Menggunakan proporsi asli tinggi */
+    display: block; /* Memastikan video ditampilkan sebagai blok */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form button {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: orange;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: darkorange;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Atur lebar maksimum sesuai kebutuhan */
+    margin: 0 auto; /* Memusatkan video di halaman */
+}
+

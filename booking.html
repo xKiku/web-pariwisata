@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pariwisata Indonesia - Pesan Tiket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><span>P</span>ARIWISATA</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="budaya.html">Kebudayaan</a>
+            <a href="wisata.html">Tempat Wisata</a>
+            <a href="hotel.html">Hotel</a>
+            <a href="booking.html">Pesan Tiket</a>
+        </nav>
+    </header>
+    <main>
+        <section id="booking" class="content-section active">
+            <h1>Pesan Tiket</h1>
+            <form id="booking-form">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="wisata">Tempat Wisata:</label>
+                <select id="wisata" name="wisata" required>
+                <option value="" disabled selected>Pilih Tempat Wisata</option>
+                <option value="Bajo">Labuan Bajo</option>
+                </select>
+
+                <label for="tanggal-kunjungan">Tanggal Kunjungan:</label>
+                <input type="date" id="tanggal-kunjungan" name="tanggal-kunjungan" required>
+
+                <button type="submit">Pesan</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
